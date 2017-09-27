@@ -21,7 +21,7 @@
                     <key>needs-shine</key>
                     <true/>
                     <key>url</key>
-                    <string>https://github.com/zhouhao86/ipahouse/blob/master/logo%402x.png</string>
+                    <string>https://github.com/zhouhao86/ipahouse/blob/master/icon.png</string>
                 </dict>
 
                 <dict>
@@ -30,7 +30,7 @@
                     <key>needs-shine</key>
                     <true/>
                     <key>url</key>
-                    <string>https://github.com/zhouhao86/ipahouse/blob/master/logo%402x.png</string>
+                    <string>https://github.com/zhouhao86/ipahouse/blob/master/icon.png</string>
                 </dict>
            </array>
 
@@ -40,7 +40,7 @@
                 <key>bundle-identifier</key>
                 <string>com.forever.demo</string>
                 <key>bundle-version</key>
-                <string>1.0.0</string>
+                <string>1.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
