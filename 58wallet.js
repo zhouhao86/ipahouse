@@ -11,7 +11,7 @@ JBIwallet.prototype = {
 
 
 window.document.addEventListener('message',function(e) {
-   var event = new CustomEvent('GetAccounts', { detail: { a: 1, b: 2} });
+   var event = new CustomEvent('GetAccounts', e.data);
    document.dispatchEvent(event)
 
 })
