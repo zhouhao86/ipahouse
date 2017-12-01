@@ -4,7 +4,7 @@ function JBIwallet() {
 }
 JBIwallet.prototype = {
 
-   GetAccounts:function {
+   GetAccounts:function() {
        window.postMessage("GetAccounts")
    }
 }
