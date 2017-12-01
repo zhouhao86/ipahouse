@@ -1,8 +1,8 @@
-function 58wallet() {
+function JBIwallet() {
 
 
 }
-58wallet.prototype = {
+JBIwallet.prototype = {
 
    GetAccounts:function {
        window.postMessage("GetAccounts")
