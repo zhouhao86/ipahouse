@@ -14,7 +14,7 @@ JBIwallet.prototype = {
 
 
 window.document.addEventListener('message',function(e) {
-   var jsonObj = JSON.parse(e.nativeEvent.data);
+   var jsonObj = JSON.parse(e.data);
    if(jsonObj.method == 'GetAccounts') {
        var event = new CustomEvent('GetAccounts', { detail: jsonObj.data });
        document.dispatchEvent(event)
