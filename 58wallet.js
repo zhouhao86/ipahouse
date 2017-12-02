@@ -5,7 +5,10 @@ function JBIwallet() {
 JBIwallet.prototype = {
 
    GetAccounts:function() {
-       window.postMessage("GetAccounts")
+       var jsonObj =  new Object();
+       jsonObj.method = "GetAccounts";
+       var str = JSON.stringify(jsonObj);
+       window.postMessage(str)
    }
 }
 
