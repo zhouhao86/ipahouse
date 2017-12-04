@@ -1,7 +1,8 @@
+
+var callbackId= 0;
+var callbackArray = [];
 function JBIwallet() {
 
-     this.callbackId= 0;
-     this.callbackArray = [];
 
 }
 JBIwallet.prototype = {
@@ -21,17 +22,17 @@ JBIwallet.prototype = {
        var str = JSON.stringify(jsonObj);
        window.postMessage(str)
       
-   },
+   }
+   
+}
 
-   exeCallback:function(param) {
+JBIwallet.exeCallback= function(param) {
       var jsonObj = JSON.parse(param);
       var callback = this.callbackArray[param.callbackId];
       if(callback && typeof(callback) === "function") {
          callback(param.data);
       }
-   }
-   
-}
+ }
 
 
 window.document.addEventListener('message',function(e) {
