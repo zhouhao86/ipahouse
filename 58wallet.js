@@ -11,7 +11,7 @@ JBIwallet.prototype = {
        jsonObj.method = "GetAccounts";
        var str = JSON.stringify(jsonObj);
        window.postMessage(str)
-   }
+   },
    
    GetAccountsCallBack:function(callback) {
        var jsonObj =  new Object();
@@ -21,7 +21,7 @@ JBIwallet.prototype = {
        var str = JSON.stringify(jsonObj);
        window.postMessage(str)
       
-   }
+   },
 
    exeCallback:function(param) {
       var jsonObj = JSON.parse(param);
