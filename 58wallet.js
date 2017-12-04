@@ -1,9 +1,11 @@
 
-var callbackId= 0;
-var callbackArray = [];
+var callbackId;
+var callbackArray;
 function JBIwallet() {
-
-
+   
+    callbackId = 0;
+    callbackArray= [];
+    
 }
 JBIwallet.prototype = {
 
