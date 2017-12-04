@@ -30,8 +30,8 @@ JBIwallet.prototype = {
 
 JBIwallet.exeCallback= function(param) {
       var jsonObj = JSON.parse(param);
-      var callback = callbackArray[param.callbackId];
-      if(callback) {
+      var callback = callbackArray[jsonObj.callbackId];
+      if(callback && typeof(callback) === "function") {
          callback(param.data);
       }
  }
