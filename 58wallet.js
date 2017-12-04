@@ -19,8 +19,8 @@ JBIwallet.prototype = {
    GetAccountsCallBack:function(callback) {
        var jsonObj =  new Object();
        jsonObj.method = "GetAccountsCallback";
-       jsonObj.callbackId= this.callbackId;
-       this.callbackArray[this.callbackId++] = callback;
+       jsonObj.callbackId= callbackId;
+       callbackArray[callbackId++] = callback;
        var str = JSON.stringify(jsonObj);
        window.postMessage(str)
       
@@ -30,7 +30,7 @@ JBIwallet.prototype = {
 
 JBIwallet.exeCallback= function(param) {
       var jsonObj = JSON.parse(param);
-      var callback = this.callbackArray[param.callbackId];
+      var callback = callbackArray[param.callbackId];
       if(callback && typeof(callback) === "function") {
          callback(param.data);
       }
