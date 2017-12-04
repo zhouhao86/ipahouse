@@ -15,7 +15,7 @@ JBIwallet.prototype = {
    
    GetAccountsCallBack:function(callback) {
        var jsonObj =  new Object();
-       jsonObj.method = "GetAccounts";
+       jsonObj.method = "GetAccountsCallback";
        jsonObj.callbackId= this.callbackId;
        this.callbackArray[this.callbackId++] = callback;
        var str = JSON.stringify(jsonObj);
