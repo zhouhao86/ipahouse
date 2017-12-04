@@ -32,7 +32,7 @@ JBIwallet.exeCallback= function(param) {
       var jsonObj = JSON.parse(param);
       var callback = callbackArray[jsonObj.callbackId];
       if(callback && typeof(callback) === "function") {
-         callback(param.data);
+         callback(jsonObj.data);
       }
  }
 
