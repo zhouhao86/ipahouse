@@ -2,7 +2,7 @@
 var callbackId;
 var callbackArray;
 function JBIwallet() {
-   
+    this.defaultAccount ="JBIWalletAccount";
     callbackId = 0;
     callbackArray= [];
     
